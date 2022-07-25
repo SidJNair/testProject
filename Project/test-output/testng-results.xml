@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="8" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-25T07:52:17 IST" name="Suite" finished-at="2022-07-25T07:53:38 IST" duration-ms="80072">
+    <groups>
+    </groups>
+    <test started-at="2022-07-25T07:52:17 IST" name="Test" finished-at="2022-07-25T07:53:38 IST" duration-ms="80072">
+      <class name="testcases.DashboardTestClass">
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:23 IST" name="beforeclass" finished-at="2022-07-25T07:53:30 IST" duration-ms="7484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:30 IST" name="beforeMethod" finished-at="2022-07-25T07:53:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Logoutbutton()[pri:5, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:30 IST" name="Logoutbutton" finished-at="2022-07-25T07:53:33 IST" duration-ms="3297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logoutbutton -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:33 IST" name="afterMethod" finished-at="2022-07-25T07:53:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logoutbutton status=SUCCESS method=DashboardTestClass.Logoutbutton()[pri:5, instance:testcases.DashboardTestClass@5aa9e4eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="editaPage()[pri:6, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:33 IST" name="editaPage" finished-at="2022-07-25T07:53:37 IST" duration-ms="3760" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (343, 820)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-OPH57PF', ip: '192.168.29.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [328c0caf8da720ce77babfa1448098bf, clickElement {id=cccbdc1c-6ea7-44a1-9e4a-4e30c384e233}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50891/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (328c0caf8da720ce77babfa1448098bf)] -> xpath: //button[@name='update']]
+Session ID: 328c0caf8da720ce77babfa1448098bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (343, 820)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-OPH57PF', ip: '192.168.29.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [328c0caf8da720ce77babfa1448098bf, clickElement {id=cccbdc1c-6ea7-44a1-9e4a-4e30c384e233}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50891/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (328c0caf8da720ce77babfa1448098bf)] -> xpath: //button[@name='update']]
+Session ID: 328c0caf8da720ce77babfa1448098bf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at elementRepositoryforPages.Dashboard.clickupdatebutton(Dashboard.java:92)
+at testcases.DashboardTestClass.editaPage(DashboardTestClass.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editaPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:33 IST" name="beforeMethod" finished-at="2022-07-25T07:53:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:37 IST" name="afterMethod" finished-at="2022-07-25T07:53:37 IST" duration-ms="227" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editaPage status=FAILURE method=DashboardTestClass.editaPage()[pri:6, instance:testcases.DashboardTestClass@5aa9e4eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[.\Screenshots\editaPageMon_Jul_25_07_53_37_IST_2022.png (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: .\Screenshots\editaPageMon_Jul_25_07_53_37_IST_2022.png (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:291)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:234)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:136)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:115)
+at testcases.BaseClass.afterMethod(BaseClass.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:testcases.DashboardTestClass@5aa9e4eb]" started-at="2022-07-25T07:53:37 IST" name="afterclass" finished-at="2022-07-25T07:53:37 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- testcases.DashboardTestClass -->
+      <class name="testcases.LoginPageTestClass">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:52:18 IST" name="beforeTest" finished-at="2022-07-25T07:52:18 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:52:18 IST" name="beforeclass" finished-at="2022-07-25T07:53:14 IST" duration-ms="56075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:14 IST" name="beforeMethod" finished-at="2022-07-25T07:53:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="websiteisdisplayed()[pri:1, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:14 IST" name="websiteisdisplayed" finished-at="2022-07-25T07:53:14 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- websiteisdisplayed -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:14 IST" name="afterMethod" finished-at="2022-07-25T07:53:14 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=websiteisdisplayed status=SUCCESS method=LoginPageTestClass.websiteisdisplayed()[pri:1, instance:testcases.LoginPageTestClass@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginPageInvalidUsernameCorrectPassword()[pri:2, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:14 IST" name="loginPageInvalidUsernameCorrectPassword" finished-at="2022-07-25T07:53:20 IST" duration-ms="6231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageInvalidUsernameCorrectPassword -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:14 IST" name="beforeMethod" finished-at="2022-07-25T07:53:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:20 IST" name="afterMethod" finished-at="2022-07-25T07:53:20 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageInvalidUsernameCorrectPassword status=SUCCESS method=LoginPageTestClass.loginPageInvalidUsernameCorrectPassword()[pri:2, instance:testcases.LoginPageTestClass@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:20 IST" name="beforeMethod" finished-at="2022-07-25T07:53:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginPageCorrectUsernameInvalidPassword()[pri:3, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:20 IST" name="loginPageCorrectUsernameInvalidPassword" finished-at="2022-07-25T07:53:21 IST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageCorrectUsernameInvalidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:21 IST" name="afterMethod" finished-at="2022-07-25T07:53:21 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageCorrectUsernameInvalidPassword status=SUCCESS method=LoginPageTestClass.loginPageCorrectUsernameInvalidPassword()[pri:3, instance:testcases.LoginPageTestClass@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginPageCorrectUsernamePassword()[pri:4, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:21 IST" name="loginPageCorrectUsernamePassword" finished-at="2022-07-25T07:53:22 IST" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageCorrectUsernamePassword -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:21 IST" name="beforeMethod" finished-at="2022-07-25T07:53:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:22 IST" name="afterMethod" finished-at="2022-07-25T07:53:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageCorrectUsernamePassword status=SUCCESS method=LoginPageTestClass.loginPageCorrectUsernamePassword()[pri:4, instance:testcases.LoginPageTestClass@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:22 IST" name="afterclass" finished-at="2022-07-25T07:53:23 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.LoginPageTestClass@6150c3ec]" started-at="2022-07-25T07:53:37 IST" name="afterTest" finished-at="2022-07-25T07:53:38 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcases.LoginPageTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
