@@ -7,7 +7,9 @@
       <class name="testcases.DashboardTestClass">
         <methods>
           <include name="editaPage"/>
+          <include name="addapage"/>
           <include name="beforeMethod"/>
+          <include name="deleteAPage"/>
           <include name="afterclass"/>
           <include name="beforeclass"/>
           <include name="afterTest"/>
@@ -15,6 +17,17 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- testcases.DashboardTestClass -->
+      <class name="testcases.DashboardAdminUsersTestClass">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterclass"/>
+          <include name="createANewUser"/>
+          <include name="beforeclass"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcases.DashboardAdminUsersTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

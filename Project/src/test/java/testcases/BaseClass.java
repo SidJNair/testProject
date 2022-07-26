@@ -3,6 +3,7 @@ package testcases;
 import org.testng.annotations.Test;
 
 import generalUtility.GeneralUtilityClass;
+import generalUtility.Screenshot;
 
 import org.testng.annotations.BeforeMethod;
 
@@ -26,7 +27,8 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass 
 {
 	WebDriver driver;
-	GeneralUtilityClass utilobj = new GeneralUtilityClass();	
+	GeneralUtilityClass utilobj = new GeneralUtilityClass();
+	Screenshot sh= new Screenshot();
 	
 	public static Properties po;
 	  
@@ -55,12 +57,18 @@ public class BaseClass
 	  if(ITestResult.FAILURE==result.getStatus())
 	  {
 	  
+		//  String resultName=result.getName();
+	//	  sh.screenshotMethod(resultName, driver);
+		  
+		  
+		  
 		  Date d = new Date();
 		  String date = d.toString().replace(":", "_").replace(" ", "_") + ".png";
 		  TakesScreenshot ts=(TakesScreenshot)driver;
 		  File source=ts.getScreenshotAs(OutputType.FILE);
-		  FileHandler.copy(source, new File("./Screenshots/"+result.getName()+date));
+		  FileHandler.copy(source, new File("F:\\Workspace-Automation\\Project\\src\\test\\resources\\Screenshots"+result.getName()+date));
 		  System.out.println("Screenshot taken");
+		  
 		  
 			 
 	  }

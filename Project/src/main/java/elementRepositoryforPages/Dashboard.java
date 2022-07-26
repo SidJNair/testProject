@@ -1,10 +1,15 @@
 package elementRepositoryforPages;
 
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Dashboard
 {
@@ -47,6 +52,18 @@ public class Dashboard
 	@FindBy(xpath="//input[@name='title']")
 	WebElement titlebox;
 	
+	@FindBy(xpath="//a[text()='Home']")
+	WebElement home;
+	
+	@FindBy(xpath="//input[@id='page']")
+	WebElement pagebox;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement savebutton;
+	
+	@FindBy(xpath="(//i[@class='fas fa-trash-alt'])[1]")
+	WebElement deletebutton;
+	
 	public void clicksettingsbutton() 
 	{
 		settingsbutton.click();
@@ -77,6 +94,11 @@ public class Dashboard
 		editpagebutton.click();
 	}
 	
+	public void clicknewbutton() 
+	{
+	    newbutton.click();	
+	}
+	
 	public void typeDescriptionBox(String text) 
 	{
 		descriptionbox.sendKeys(text);
@@ -104,6 +126,69 @@ public class Dashboard
 		 js.executeScript("window.scrollBy(0,1000)");
 	}
 	
+	public void clickHome() 
+	{
+		home.click();
+	}
+	
+	public void typetitlebox(String text) 
+	{
+		titlebox.sendKeys(text);
+	}
+	
+	public void typepagebox(String text) 
+	{
+		pagebox.sendKeys(text);
+	}
+	
+	public void clicksavebutton() 
+	{
+		savebutton.click();
+	}
+	
+	public void navigateBack() 
+	{
+		driver.navigate().back();
+	}
+	
+	public void explicitWaitMethodupdatebutton() 
+	{
+		WebDriverWait explicitwait= new WebDriverWait(driver,Duration.ofSeconds(10));
+		explicitwait.until(ExpectedConditions.elementToBeClickable(updatebutton));
+	}
+	
+	public void explicitWaitMethodsavebutton() 
+	{
+		WebDriverWait explicitwait= new WebDriverWait(driver,Duration.ofSeconds(10));
+		explicitwait.until(ExpectedConditions.elementToBeClickable(savebutton));
+		
+	}
+	
+	public void clickDeleteButton() 
+	{
+		deletebutton.click();
+	}
+	
+	public void alertAccept() 
+	{
+		  Alert alertobj= driver.switchTo().alert();
+		  alertobj.accept();
+	}
+	
+	public void clearTitle() 
+	{
+		titlebox.clear();
+	}
+	
+	public void clearDescriptionBox() 
+	{
+		descriptionbox.clear();
+	}
+	
+	public void clearPageBox() 
+	{
+		pagebox.clear();
+	}
 	public Dashboard(WebDriver driver) 
 	{
 		this.driver=driver;

@@ -21,7 +21,7 @@ public class LoginPageTestClass extends BaseClass
 {  
 	
 	
-  @Test( priority=1)
+  @Test( priority=1, description= "To check whether website is displayed or not")
   public void websiteisdisplayed() 
   {
 	  LoginPage loginobj= new LoginPage(driver);
@@ -34,7 +34,7 @@ public class LoginPageTestClass extends BaseClass
 	  
   }  
   
-  @Test( priority=2)
+  @Test( priority=2, description= "Checking login functionality with invalid username and correct password")
   public void loginPageInvalidUsernameCorrectPassword() throws Exception 
   {
 	  LoginPage loginobj= new LoginPage(driver);
@@ -52,7 +52,7 @@ public class LoginPageTestClass extends BaseClass
   }
   
   
-  @Test( priority=3)
+  @Test( priority=3,description= "Checking login functionality with correct username and invalid password")
   public void loginPageCorrectUsernameInvalidPassword() throws IOException 
   {
 	  LoginPage loginobj= new LoginPage(driver);
@@ -70,7 +70,7 @@ public class LoginPageTestClass extends BaseClass
 	  
   }
   
-  @Test( priority=4)
+  @Test( priority=4, description="Checking login functionality with correct username and password")
   public void loginPageCorrectUsernamePassword() throws Exception 
   {
 	  LoginPage loginobj= new LoginPage(driver);

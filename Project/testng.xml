@@ -6,6 +6,7 @@
     <classes>      
       <class name="testcases.LoginPageTestClass"/>
       <class name="testcases.DashboardTestClass"/>
+      <class name="testcases.DashboardAdminUsersTestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
